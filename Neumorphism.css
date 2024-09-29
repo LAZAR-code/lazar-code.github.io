@@ -1,0 +1,231 @@
+@import url(https://fonts.bunny.net/css?family=advent-pro:100,200,300,400,500,600,700,800,900);
+
+/* CSS Reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+* {
+  transition: all 250ms;
+  cursor: none;
+}
+
+body {
+  box-shadow: inset 0px 0px 1vw #000;
+  background-color: #e0e0e0e0;
+  background: radial-gradient(circle, #e0e0e0 80%, #cdcdcd 100%);
+  font-family: "Advent Pro", sans-serif;
+}
+
+html {
+  transition: all;
+}
+
+.wrapper {
+  min-height: 100vh;
+  padding-top: 6vh;
+}
+
+.title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 6vh;
+}
+
+.box {
+  width: min(80rem, 90%);
+  height: min(10vh, 90%);
+  margin: 30px auto;
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.box:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+.box-title {
+  width: fit-content;
+  padding: 5px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+  border-radius: 24px;
+  background: linear-gradient(
+    145deg,
+    rgba(202, 202, 202, 1) 0%,
+    #e0e0e0 20%
+  );
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.about {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.yt-button {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  font-size: 32px;
+}
+
+.yt-button:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+.disc-srvr-button {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  font-size: 32px;
+}
+
+.disc-srvr-button:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 25px;
+}
+
+#madeWithLove {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  font-size: 20px;
+}
+
+#madeWithLove:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+.cursor {
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border: solid 1px #000;
+  position: absolute;
+  border-radius: 10px;
+  transition: none;
+  z-index: 100;
+}
+
+.cursor__follower1 {
+  transition: transform 0.1s;
+  width: 13px;
+  height: 13px;
+  translate: 1px 1px;
+  z-index: 50;
+}
+
+.cursor__follower2 {
+  transition: transform 0.13s;
+  width: 12px;
+  height: 12px;
+  translate: 2px 2px;
+  z-index: 49;
+}
+
+.cursor__follower3 {
+  transition: transform 0.16s;
+  width: 11px;
+  height: 11px;
+  translate: 3px 3px;
+  z-index: 48;
+}
+
+.cursor__follower4 {
+  transition: transform 0.19s;
+  width: 10px;
+  height: 10px;
+  translate: 3px 3px;
+  z-index: 47;
+}
