@@ -5,13 +5,13 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 /*
     2. Remove default margin
   */
 * {
-  margin: 0;
+    margin: 0;
 }
 /*
     Typographic tweaks!
@@ -19,8 +19,8 @@
     4. Improve text rendering
   */
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 /*
     5. Improve media defaults
@@ -30,8 +30,8 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 /*
     6. Remove built-in form typography styles
@@ -40,7 +40,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 /*
     7. Avoid text overflows
@@ -52,192 +52,243 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+    overflow-wrap: break-word;
 }
 /*
     8. Create a root stacking context
   */
 #root,
 #__next {
-  isolation: isolate;
+    isolation: isolate;
 }
 
 * {
-  transition: all 250ms;
-  cursor: none;
+    transition: all 250ms;
+    cursor: none;
 }
 
 body {
-  background: linear-gradient(to bottom, #fff, #fff 50%, #e9e9e9 50%, #e9e9e9);
-  background-size: 100% 6px;
-  animation: gradientMove 200ms ease infinite;
-  box-shadow: inset 0px 0px 40px 6px #000;
+    background: linear-gradient(
+        to bottom,
+        #fff,
+        #fff 50%,
+        #e9e9e9 50%,
+        #e9e9e9
+    );
+    background-size: 100% 6px;
+    animation: gradientMove 200ms ease infinite;
+    box-shadow: inset 0px 0px 40px 6px #000;
 }
 
 html,
 body {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .wrapper {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 .title {
-  text-align: center;
-  font-size: 128px;
-  color: rgba(255, 255, 255);
-  -webkit-text-stroke: 2px #000;
-  text-shadow: 4px 0px #0000ffb3, -4px 0px rgba(255, 0, 0, 0.7),
-    0px 0px 40px #000;
-  animation: chromaticAnim 4s ease-in-out infinite;
+    text-align: center;
+    font-size: 128px;
+    color: rgba(255, 255, 255);
+    -webkit-text-stroke: 2px #000;
+    text-shadow:
+        4px 0px #0000ffb3,
+        -4px 0px rgba(255, 0, 0, 0.7),
+        0px 0px 40px #000;
+    animation: chromaticAnim 4s ease-in-out infinite;
 }
 
 .about {
-  font-size: 36px;
-  color: rgba(255, 255, 255);
-  -webkit-text-stroke: 1px #000;
-  text-shadow: 2px 1px rgba(0, 0, 255, 0.7), -2px 1px rgba(255, 0, 0, 0.7), 0px 0px 2px #000;
+    font-size: 36px;
+    color: rgba(255, 255, 255);
+    -webkit-text-stroke: 1px #000;
+    text-shadow:
+        2px 1px rgba(0, 0, 255, 0.7),
+        -2px 1px rgba(255, 0, 0, 0.7),
+        0px 0px 2px #000;
 }
 
 .about:hover {
-  text-shadow: 4px 2px rgba(0, 0, 255, 0.7), -4px 2px rgba(255, 0, 0, 0.7);
-  transform: scale(101%);
+    text-shadow:
+        4px 2px rgba(0, 0, 255, 0.7),
+        -4px 2px rgba(255, 0, 0, 0.7);
+    transform: scale(101%);
 }
 
 .box {
-  width: min(80rem, 80%);
-  margin: 30px auto;
-  padding: 16px;
-  border: 2px solid #000;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px #000;
-  background: linear-gradient(to bottom, #ccc, #ccc 50%, #999999 50%, #999999);
-  background-size: 100% 6px;
-  animation: gradientMove 200ms ease infinite;
+    width: min(80rem, 80%);
+    margin: 30px auto;
+    padding: 16px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000;
+    background: linear-gradient(
+        to bottom,
+        #ccc,
+        #ccc 50%,
+        #999999 50%,
+        #999999
+    );
+    background-size: 100% 6px;
+    animation: gradientMove 200ms ease infinite;
 }
 
 .yt-button {
-  width: fit-content;
-  padding: 10px;
-  border: 2px solid #000;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px #000;
-  background: linear-gradient(
-    to bottom,
-    #ff5050,
-    #ff5050 50%,
-    #ff6f6f 50%,
-    #ff6f6f
-  );
-  background-size: 100% 6px;
-  animation: gradientMove 200ms ease infinite;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000;
+    background: linear-gradient(
+        to bottom,
+        #ff5050,
+        #ff5050 50%,
+        #ff6f6f 50%,
+        #ff6f6f
+    );
+    background-size: 100% 6px;
+    animation: gradientMove 200ms ease infinite;
 }
 
 .disc-srvr-button {
-  width: fit-content;
-  padding: 10px;
-  border: 2px solid #000;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px #000;
-  background: linear-gradient(
-    to bottom,
-    #5865f2,
-    #5865f2 50%,
-    #6c77f0 50%,
-    #6c77f0
-  );
-  background-size: 100% 6px;
-  animation: gradientMove 200ms ease infinite;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000;
+    background: linear-gradient(
+        to bottom,
+        #5865f2,
+        #5865f2 50%,
+        #6c77f0 50%,
+        #6c77f0
+    );
+    background-size: 100% 6px;
+    animation: gradientMove 200ms ease infinite;
+}
+
+.github-button {
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000;
+    background: linear-gradient(
+        to bottom,
+        rgb(100, 100, 100),
+        rgb(100, 100, 100) 50%,
+        rgb(120, 120, 120) 50%,
+        rgb(120, 120, 120)
+    );
+    background-size: 100% 6px;
+    animation: gradientMove 200ms ease infinite;
 }
 
 .buttons {
-  display: flex;
-  width: fit-content;
-  margin: 0 auto;
-  gap: 25px;
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 25px;
 }
 
 #madeWithLove {
-  position: absolute;
-  bottom: 18px;
-  left: 18px;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 2px solid #000;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px #000;
-  background: linear-gradient(to bottom, #ccc, #ccc 50%, #999999 50%, #999999);
-  background-size: 100% 6px;
-  animation: gradientMove 200ms ease infinite;
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000;
+    background: linear-gradient(
+        to bottom,
+        #ccc,
+        #ccc 50%,
+        #999999 50%,
+        #999999
+    );
+    background-size: 100% 6px;
+    animation: gradientMove 200ms ease infinite;
 }
 
 @keyframes gradientMove {
-  0% {
-    background-size: 100% 4px;
-  }
-  50% {
-    background-size: 100% 2px;
-  }
-  100% {
-    background-size: 100% 4px;
-  }
+    0% {
+        background-size: 100% 4px;
+    }
+    50% {
+        background-size: 100% 2px;
+    }
+    100% {
+        background-size: 100% 4px;
+    }
 }
 
 @keyframes chromaticAnim {
-  0% {
-    text-shadow: 4px 2px rgba(0, 0, 255, 0.7), -4px -2px rgba(255, 0, 0, 0.7), 0px 0px 6px #000;
-  }
-  50% {
-    text-shadow: -4px -2px rgba(0, 0, 255, 0.7), 4px 2px rgba(255, 0, 0, 0.7), 0px 0px 6px #000;
-  }
-  100% {
-    text-shadow: 4px 2px rgba(0, 0, 255, 0.7), -4px -2px rgba(255, 0, 0, 0.7), 0px 0px 6px #000;
-  }
+    0% {
+        text-shadow:
+            4px 2px rgba(0, 0, 255, 0.7),
+            -4px -2px rgba(255, 0, 0, 0.7),
+            0px 0px 6px #000;
+    }
+    50% {
+        text-shadow:
+            -4px -2px rgba(0, 0, 255, 0.7),
+            4px 2px rgba(255, 0, 0, 0.7),
+            0px 0px 6px #000;
+    }
+    100% {
+        text-shadow:
+            4px 2px rgba(0, 0, 255, 0.7),
+            -4px -2px rgba(255, 0, 0, 0.7),
+            0px 0px 6px #000;
+    }
 }
 
 .cursor {
-  left: 0;
-  top: 0;
-  width: 15px;
-  height: 15px;
-  background-color: #ffffff;
-  border: solid 1px #000;
-  position: absolute;
-  border-radius: 10px;
-  transition: none;
-  z-index: 100;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border: solid 1px #000;
+    position: absolute;
+    border-radius: 10px;
+    transition: none;
+    z-index: 100;
 }
 
 .cursor__follower1 {
-  transition: transform 0.1s;
-  width: 13px;
-  height: 13px;
-  translate: 1px 1px;
-  z-index: 50;
+    transition: transform 0.1s;
+    width: 13px;
+    height: 13px;
+    translate: 1px 1px;
+    z-index: 50;
 }
 
 .cursor__follower2 {
-  transition: transform 0.13s;
-  width: 12px;
-  height: 12px;
-  translate: 2px 2px;
-  z-index: 49;
+    transition: transform 0.13s;
+    width: 12px;
+    height: 12px;
+    translate: 2px 2px;
+    z-index: 49;
 }
 
 .cursor__follower3 {
-  transition: transform 0.16s;
-  width: 11px;
-  height: 11px;
-  translate: 3px 3px;
-  z-index: 48;
+    transition: transform 0.16s;
+    width: 11px;
+    height: 11px;
+    translate: 3px 3px;
+    z-index: 48;
 }
 
 .cursor__follower4 {
-  transition: transform 0.19s;
-  width: 10px;
-  height: 10px;
-  translate: 3px 3px;
-  z-index: 47;
+    transition: transform 0.19s;
+    width: 10px;
+    height: 10px;
+    translate: 3px 3px;
+    z-index: 47;
 }
