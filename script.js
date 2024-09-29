@@ -15,7 +15,8 @@ body.addEventListener("mousemove", function (e) {
   let y = e.pageY / window.innerHeight;
 
   for (let i = 0; i < 3; i++) {
-    squares[i].style.transform = `translate(${-x * 20}%, ${-y * 10}%)`;
+    squares[i].style.transform =
+      `translate(-${x * 20}px, -${y * 10}px) rotate(${(x - 0.5) * 5}deg)`;
     squares[i].style.transition = "none";
   }
 });
@@ -53,7 +54,7 @@ function setPosition(element, e) {
 
 function switchToRetro() {
   css.href = "Retro.css";
-  made.textContent="Back";
+  made.textContent = "Back";
 }
 
 function switchToNeumorph() {
